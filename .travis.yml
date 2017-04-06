@@ -1,0 +1,10 @@
+language: generic
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - doxygen
+
+script:
+  - ./Scripts/build_docs.sh
