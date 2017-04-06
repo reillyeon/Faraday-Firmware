@@ -8,3 +8,9 @@ addons:
 
 script:
   - ./Scripts/build_docs.sh
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: Documentation/Document_Output/html
